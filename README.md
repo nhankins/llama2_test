@@ -1,5 +1,4 @@
 # llama2_test
-Testing out Llama2 by fine-tuning the pre-trained model with movie dialogue (initially)
 
 Testing out Llama2 by fine-tuning the pre-trained model with movie dialogue (initially)
 
