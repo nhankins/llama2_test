@@ -29,10 +29,10 @@ Credit for code and data:
 The HuggingFace JeopardyBot model (https://huggingface.co/openaccess-ai-collective/jeopardy-bot/tree/main) inspired me to do this experiment. It uses the first Llama LLM and Hugging Face jeopardy data so I wanted to update it with the second version of the LLM.
 
 
-Used this notebook code yet adjusted the model and datset to fit purposes of use case(https://towardsdatascience.com/fine-tune-your-own-llama-2-model-in-a-colab-notebook-df9823a04a32) as well as added some misc details like mounting google drive. I commented out a lot of the LoRA implementation and tensorboard logging for later tests.
-
-
-"Initial notebook created by [@maximelabonne](https://twitter.com/maximelabonne), based on Younes Belkada's [GitHub Gist](https://gist.github.com/younesbelkada/9f7f75c94bdc1981c8ca5cc937d4a4da). Special thanks to Tolga HOŞGÖR for his solution to empty the VRAM."
+Used the following notebook code yet adjusted the model and datset to fit purposes of use case(https://towardsdatascience.com/fine-tune-your-own-llama-2-model-in-a-colab-notebook-df9823a04a32) as well as added some misc details like mounting google drive. I commented out a lot of the LoRA implementation and tensorboard logging for later tests.
+    |
+    |
+    --- > "Initial notebook created by [@maximelabonne](https://twitter.com/maximelabonne), based on Younes Belkada's [GitHub Gist](https://gist.github.com/younesbelkada/9f7f75c94bdc1981c8ca5cc937d4a4da). Special thanks to Tolga HOŞGÖR for his solution to empty the VRAM."
 
 Llama2 paper (https://arxiv.org/pdf/2307.09288.pdf)
 
