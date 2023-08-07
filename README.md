@@ -10,8 +10,14 @@ Potential use cases can be to help train for applying to the game show, Jeopardy
 -Jeopardy_CSV.csv = corpus of jeopardy question and answer data
 
 
--llama2_jeopardy.ipynb = notebook code that needs some work in loading the data into the correct format to complete fine-tuning process. Using autotrain one line to simplify process. 
+-llama2_jeopardy.ipynb = notebook code that needs an adjustment to the text_column parameter in order to load the data into the correct format to complete fine-tuning. The dataset text field should be 'question' not 'text'
 
-*** However, need to fix the KeyError in the data.
+-
 
-Found HuggingFace JeopardyBot model (https://huggingface.co/openaccess-ai-collective/jeopardy-bot/tree/main) that uses the first Llama LLM. May try to use their code to improve this one
+
+
+
+Found HuggingFace JeopardyBot model (https://huggingface.co/openaccess-ai-collective/jeopardy-bot/tree/main) that uses the first Llama LLM.
+
+
+Used this code yet adjusted the model and datset to fit purposes of use case(https://towardsdatascience.com/fine-tune-your-own-llama-2-model-in-a-colab-notebook-df9823a04a32)
