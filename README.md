@@ -15,7 +15,9 @@ It requires at least a T4 GPU to fine-tune. The version of the Llama2 model is s
 
 # Explanation of repository files:
 
--main.ipynb = Main trainer notebook. Contains commented information on decisions made to customize the experiment for an intruction task, i.e. passing both questions and answers as parameters.
+-main_modified.ipynb - Updated version as of 8/9/23. Increases batch sizes and max_seq_length to speed up training efficiency, yet ran out of memory. Will continue when budget is greater.
+
+-main.ipynb = Main trainer notebook. Contains commented information on decisions made to customize the experiment for an intruction task, i.e. passing both questions and answers as parameters. Was able to have a friend train on a compute cluster, yet I wanted to adjust parameters before completion. Still unsure how to load the saved model at this time with the qLoRA adapter model. 
 
 
 -Jeopardy_CSV.csv = A copy of the HuggingFace corpus of jeopardy question and answer data
@@ -34,6 +36,8 @@ Used the following notebook code yet adjusted the model and datset to fit purpos
     |
     |
     --- > "Initial notebook created by [@maximelabonne](https://twitter.com/maximelabonne), based on Younes Belkada's [GitHub Gist](https://gist.github.com/younesbelkada/9f7f75c94bdc1981c8ca5cc937d4a4da). Special thanks to Tolga HOŞGÖR for his solution to empty the VRAM."
+
+
 
 Llama2 paper (https://arxiv.org/pdf/2307.09288.pdf)
 
