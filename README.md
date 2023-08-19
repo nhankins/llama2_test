@@ -15,13 +15,18 @@ It requires at least a T4 GPU to fine-tune. The version of the Llama2 model is s
 
 # Explanation of repository files:
 
--main_modified.ipynb - Updated version as of 8/9/23. Increases batch sizes and max_seq_length to speed up training efficiency, yet ran out of memory. Will continue when budget is greater.
+-llama-2-jeopardy-model - trained model for inference on smaller dataset (coming soon). Will continue to tweak and play around with papermeters locally before uploading.
+
+-main_modified_small.ipynb - contains code that will generate the fine-tuned instruction task model 
+
+-main_modified.ipynb - Increases batch sizes and max_seq_length to speed up training efficiency, yet ran out of memory. Will cut down on number of Q&A pairs for ease on current training resources
 
 -main.ipynb = Main trainer notebook. Contains commented information on decisions made to customize the experiment for an intruction task, i.e. passing both questions and answers as parameters. Was able to have a friend train on a compute cluster, yet I wanted to adjust parameters before completion. Still unsure how to load the saved model at this time with the qLoRA adapter model. 
 
 
 -Jeopardy_CSV.csv = A copy of the HuggingFace corpus of jeopardy question and answer data
 
+-jeopardy_smaller.csv - smaller version of jeopardy data
 
 -first_try.ipynb = This includes my first try. It is notebook code that needs an adjustment to the text_column parameter in order to load the data into the correct format to complete fine-tuning. The dataset text field should be 'question' and 'answer' not 'text'
 
